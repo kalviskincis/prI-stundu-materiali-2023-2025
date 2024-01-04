@@ -12,7 +12,7 @@ def kvadratvienadojums(a, b, c):
     else:
         print("sakņu nav")
 
-a = 1
+a = 3
 b = 2
 c = 1
 
