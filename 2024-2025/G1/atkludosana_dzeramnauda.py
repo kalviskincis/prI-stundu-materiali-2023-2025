@@ -5,20 +5,21 @@ def main():
         atstat = eiro * procenti
         print(f"Atstāj €{atstat:.2f}")
     except TypeError:
-        print("Nebija iespējams aprēķināt.")
+        print("Nevarēju veikt aprēķinus. Nepareizi dati.")
 
 def cena_uz_float(e):
     try:
         eiro = float(e.strip("€"))
         return eiro
     except ValueError:
-        print("Nepareizi ievadīta vērtība.")
+        print("Netika ievadīta korekta vērtība.")
 
 def procenti_uz_float(p):
     try:
         procenti = float(p.strip("%"))/100
         return procenti
     except ValueError:
-        print("Nepareizi ievadīta vērtība.")
+        print("Netika ievadīta korekta vērtība.")
 
-main()
+if __name__ == "main":
+   main()
