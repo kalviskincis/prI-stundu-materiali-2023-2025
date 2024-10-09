@@ -21,5 +21,5 @@ def procenti_uz_float(p):
     except ValueError:
         print("Nepareizi ievadīta vērtība.")
 
-if __name__ == "main":
+if __name__ == "__main__":
     main()
