@@ -10,11 +10,15 @@ def convert(fraction):
     y = int(y)
     if x <= y:
         result = round(x/y*100)
+    elif y == 0:
+        raise ZeroDivisionError
+    else:
+        raise ValueError
     return result 
         
 
 def gauge(percentage):    
-    if 1 < percentage < 98:
+    if 1 < percentage < 100:
         return f"{percentage}%"
     elif percentage <= 1:
         return "E"

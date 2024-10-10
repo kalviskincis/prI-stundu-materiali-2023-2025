@@ -10,9 +10,13 @@ def convert(fraction):
     y = int(y)
     if x <= y:
         result = round(x/y*100)
+    elif y == 0:
+        raise ZeroDivisionError # noteikti izsauc kļūdu
+    else:
+        raise ValueError
+
     return result 
         
-
 def gauge(percentage):    
     if 1 < percentage < 98:
         return f"{percentage}%"
@@ -20,8 +24,6 @@ def gauge(percentage):
         return "E"
     else:
         return "F"
-
-
 
 if __name__ == "__main__":
     main()
