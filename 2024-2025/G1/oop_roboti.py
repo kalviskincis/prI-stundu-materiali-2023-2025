@@ -6,7 +6,7 @@ class Robots:
         self.jauns = jauns
         self.uzlades_reizes = uzlades_reizes
         self.darba_reizes = darba_reizes
-        print(f"Robots {self.vards} ir izveidots.")
+        print(f"Robots {self.vards} ir izveidots.")    
 
     def uzlade(self, laiks):
         self.uzlades_reizes += 1
@@ -28,10 +28,7 @@ class Robots:
     def statuss(self):
         print(f"Robots {self.vards}, uzlādes līmenis {self.baterija}%.")
         print(f"Jauns {self.jauns}, strādājis {self.darba_reizes}.")
-
-
-
-
+        
 r1 = Robots("Putekļusūcējs", 75)
 r1.uzlade(45)
 r1.strada(15)

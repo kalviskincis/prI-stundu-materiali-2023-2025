@@ -49,3 +49,7 @@ r2.uzlade(5)
 r2.strada(20)
 r2.info()
 
+print()
+
+r3 = Robots("Kaķa barotājs", 15, False, 5, 2)
+r3.info()
